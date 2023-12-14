@@ -4,12 +4,17 @@ version = "0.1.0"
 description = ""
 authors = ["Jacob Valdez <jacobfv123@gmail.com>"]
 readme = "README.md"
-packages = [{include = "lmi_web_browser"}]
+packages = [{ include = "lmi_web_browser" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-
+python-hooks = "^0.2.1"
+typer = "^0.9.0"
+lmi = "^0.0.1"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+lmi-calculator = 'lmi_web_browser.__main__:app'
