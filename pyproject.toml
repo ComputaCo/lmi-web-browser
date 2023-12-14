@@ -1,9 +1,16 @@
 [tool.poetry]
 name = "lmi-web-browser"
 version = "0.1.0"
-description = ""
-authors = ["Jacob Valdez <jacobfv123@gmail.com>"]
+description = "Web browser for LLMs"
+authors = [
+    "ComputaCo <hello@computaco.ai>",
+    "Jacob Valdez <jacob.valdez@computaco.ai>",
+]
 readme = "README.md"
+license = "MIT"
+homepage = "https://computaco.ai"
+repository = "https://github.com/ComputaCo/lmi-web-browser"
+keywords = ["lmi", "llm", "terminal", "cli"]
 packages = [{ include = "lmi_web_browser" }]
 
 [tool.poetry.dependencies]
